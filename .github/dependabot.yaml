@@ -1,0 +1,20 @@
+# Configuration file for Dependabot that automatically updates the packages to
+# the latest version.  For more information about, refer to the official GitHub
+# documentation for Dependabot at:
+#
+#       https://docs.github.com/en/code-security/dependabot/
+#
+# The package ecosystem you can configure is GitHub Actions, docker, pip, and
+# npm or any other package manager that supports Dependabot.
+
+---
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, workflow]
